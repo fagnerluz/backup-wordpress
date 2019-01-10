@@ -10,6 +10,7 @@ wordpress_dirs = ['wp-content/themes', 'wp-content/plugins', 'wp-content/uploads
 wordpress_files = ['wp-config.php', '.htaccess']
 timestamp = time.strftime('%Y-%m-%d')
 
+# CODE
 def sync_wordpress_dir():
     os.system('aws s3 sync ' + www_dir + diretorio + '/' + wordpress_dir + ' '  + bucket + '/' + diretorio + '/' + wordpress_dir + '/')
 
